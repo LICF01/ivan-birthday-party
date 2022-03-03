@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import baby from '../lotties/26614-baby-mind-logo-v1.json';
+import astronautRocket from '../lotties/astronaoutRocket.json'
 import EarthOrbitingSun from '../components/EarthOrbitingSun';
 import Stars from '../components/Stars';
 
@@ -57,17 +58,14 @@ const One = () => {
 		tl.current.fromTo(
 			earthAnim.current,
 			{
-				opacity: 1,
-				width: '200vw',
+				opacity: 0,
 			},
 			{
 				opacity: 1,
-				width: '100vw',
-				duration: 1,
 				scrollTrigger: {
 					trigger: earthAnim.current,
 					scrub: true,
-					start: 'top 30%',
+					start: 'top center',
 					end: 'top top',
 				},
 			}
@@ -106,15 +104,31 @@ const One = () => {
 	return (
 		<>
 			<div className='section bg-space-dark flex items-center justify-center flex-col  w-[100vw] h-[100vh] text-slate-300'>
-				<p className='text text-7xl font-bold'>Hola!</p>
+				<p className='text text-5xl font-bold'>Hola!</p>
+				<p className='text text-7xl font-bold'>Soy Iván</p>
 				<div ref={babyAnim} className='baby h-[20rem] w-[20rem]'>
-					<Lottie loop={true} animationData={baby} />
+					<Lottie loop={true} animationData={astronautRocket} />
 				</div>
 				<div className='px-10'>
 					<p className='text text-3xl text-slate-300 font-bold'>
 						Tengo una gran noticia que compartir!!!
 					</p>
 				</div>
+					<img
+						src='./SVG/mercury.svg'
+						className='w-[3rem] absolute z-50 top-[50px] left-10 cursor-pointer'
+						alt='mercury'
+					/>
+					<img
+						src='./SVG/venus.svg'
+						className='w-[6rem] absolute z-50 top-[130px] right-[20px] cursor-pointer'
+						alt='venus'
+					/>
+					<img
+						src='./SVG/earth.svg'
+						className='w-[6rem] absolute z-50 bottom-[30px] right-[50%] cursor-pointer'
+						alt='venus'
+					/>
 			</div>
 			<div className='section bg-space-dark flex items-center justify-center flex-col w-[100vw] h-[100vh]'>
 				<div className='px-10'>
