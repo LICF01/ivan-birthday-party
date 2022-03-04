@@ -15,7 +15,7 @@ const Two = () => {
 
 	// Gsap animation
 	useEffect(() => {
-		const tl = gsap.timeline().fromTo(
+		gsap.timeline().fromTo(
 			earthAnim.current,
 			{
 				opacity: 0,
@@ -33,17 +33,15 @@ const Two = () => {
 	});
 
 	return (
-		<div className='section bg-space-dark flex items-center justify-center flex-col w-[100vw] h-[100vh]'>
-			<div className='px-10'>
-				<p className='text text-3xl text-slate-300 font-bold'>
+		<div className='section bg-space-dark flex items-center justify-center flex-col w-[100vw] h-[100vh] font-bold text-2xl px-10'>
+				<p className='text '>
 					Estoy por completar mi primera vuelta al sol
 				</p>
-			</div>
 			<div ref={earthAnim}>
 				<Lottie animationData={EarthOrbitingSun} loop={true} />
 			</div>
 			<div className='px-10'>
-				<p className='text text-3xl text-slate-300 font-bold'>
+				<p className='text '>
 					Me acompañarías a festejar este momento especial?
 				</p>
 			</div>
