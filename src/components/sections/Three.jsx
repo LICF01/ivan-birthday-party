@@ -53,18 +53,21 @@ const Three = () => {
 
 	return (
 		<div className='section section-3 flex items-center justify-center flex-col w-[100vw] h-[100vh] relative overflow-hidden font-bold text-2xl'>
-			<div className='flex flex-col justify-center items-center text-center px-10 absolute top-[120px]'>
+			<div className='flex flex-col justify-center items-center text-center px-10 absolute top-[120px] z-[999]'>
 				<p className='text py-2'>
-					Te espero el sábado 12 de Marzo de 2022 en la
+					Te espero el sábado 12 de Marzo de 2022 a las 17:00
+				</p>
+				<p className='text py-2'>
+					En el local de
 					<a
 						href='https://g.page/navegandoparque?share'
 						class='text-blue-400 visited:text-purple-400 ...'
 					>
 						{' '}
-						sucursal 2 de Navegando{' '}
+						"Navegando" sucursal 2{' '}
 					</a>
-					a las 17:00
 				</p>
+				<p className='text  py-2'>Cap. Oscar Ortellado Nº 277</p>
 				<p className='text  py-2'>Nos vemos!</p>
 			</div>
 
@@ -100,7 +103,7 @@ const Three = () => {
 			</div>
 			<div
 				ref={planetSurface}
-				className='absolute w-[100vw] bottom-[0] z-0'
+				className='absolute w-[100vw] bottom-[0] z-10'
 			>
 				<img
 					src='./SVG/planetSurface.svg'
@@ -110,7 +113,7 @@ const Three = () => {
 			</div>
 			<div
 				ref={astronaut}
-				className='absolute w-[15rem] bottom-[80px] z-0'
+				className='absolute w-[15rem] bottom-[80px] z-10'
 			>
 				<img
 					src='./SVG/astronautWithFlag.svg'

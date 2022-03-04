@@ -36,18 +36,15 @@ const Two = () => {
 
 	return (
 		<div className='section bg-space-dark flex items-center justify-center flex-col w-[100vw] h-[100vh] font-bold text-2xl px-10 relative'>
-			<p className='text '>
+			<p className='text absolute top-[20vh] z-[999]'>
 				Estoy por completar mi primera vuelta al sol
 			</p>
 			<div ref={earthAnim}>
 				<Lottie animationData={EarthOrbitingSun} loop={true} />
 			</div>
-			<div className='px-10'>
-				<p className='text '>
-					Me acompañarías a festejar este momento especial?
-				</p>
-			</div>
-
+			<p className='text absolute bottom-[20vh] z-[999]'>
+				Me acompañarías a festejar este momento especial?
+			</p>
 			<img
 				src='./SVG/mars.svg'
 				className='w-[5.5rem] absolute z-50 top-[-100px] right-[20%] cursor-pointer'
@@ -62,7 +59,7 @@ const Two = () => {
 			/>
 			<img
 				src='./SVG/saturn.svg'
-				className='w-[12.5rem] absolute z-50 bottom-[10px] left-[140px] cursor-pointer'
+				className='w-[12.5rem] absolute z-50 bottom-[10px] left-[15px] cursor-pointer'
 				alt='venus'
 				onClick={() => navigate('/saturn')}
 			/>

@@ -22,7 +22,6 @@ const About = () => {
 
 	return (
 		<div className='px-10 min-h-screen py-20 relative'>
-
 			<div>
 				<Link to='/'>
 					<p className='text text-md font-bold absolute top-0 mt-5 uppercase'>
@@ -30,7 +29,8 @@ const About = () => {
 					</p>
 				</Link>
 			</div>
-			<p className='text text-5xl font-bold mx-auto'>About</p>
+			<p className='text text-5xl font-bold mx-auto mt-20'>Para Iván y Asu</p>
+
 			<div ref={ref} className='h-[20rem] w-[20rem] mx-auto'>
 				<Lottie loop={true} animationData={WorkingAstronaut} />
 			</div>
@@ -47,7 +47,6 @@ const About = () => {
 					</a>
 					con React, TailwindCSS y Gsap
 				</p>
-				<p className='text  my-5'>Para Iván y Asu</p>
 			</div>
 		</div>
 	);

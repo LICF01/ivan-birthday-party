@@ -42,22 +42,26 @@ const One = () => {
 	useEffect(() => {
 		gsap.timeline().from(astroRocketAnim.current, {
 			opacity: 0,
-			height: '60rem',
-			width: '60rem',
+			// width: '60rem',
+			// height: '60rem',
 			duration: 3,
 		});
 	});
 
 	return (
 		<>
-			<div className='section  flex items-center justify-center flex-col  w-[100vw] h-[100vh]  relative px-10  font-bold text-2xl'>
+			<div className='section  flex items-center justify-center flex-col  w-[100vw] h-[100vh]  relative px-10  font-bold text-2xl '>
+					{/* <div className='absolute top-[20vh] z-[999]'> */}
+						<p className='text text-3xl absolute top-[15vh]'>Hola!</p>
+						<p className='text text-5xl absolute top-[20vh]'>Soy Iván</p>
 
-				<p className='text text-3xl '>Hola!</p>
-				<p className='text text-5xl '>Soy Iván</p>
-				<div ref={astroRocketAnim} className='h-[20rem] w-[20rem]'>
+				{/* </div> */}
+				<div ref={astroRocketAnim} className='h-[20rem] w-[20rem] mt-[0]'>
 					<Lottie loop={true} animationData={astronautRocket} />
 				</div>
-				<p className='text'>Tengo una gran noticia que compartir!!!</p>
+					<p className='text absolute bottom-[20vh] z-[999] '>
+						Tengo una gran noticia que compartir!!!
+					</p>
 				<img
 					src='./SVG/mercury.svg'
 					className='w-[3rem] absolute z-50 top-[50px] left-10 cursor-pointer'
@@ -66,13 +70,13 @@ const One = () => {
 				/>
 				<img
 					src='./SVG/venus.svg'
-					className='w-[6rem] absolute z-50 top-[130px] right-[20px] cursor-pointer'
+					className='w-[6rem] absolute z-50 top-[200px] right-[20px] cursor-pointer'
 					alt='venus'
 					onClick={() => navigate('/venus')}
 				/>
 				<img
 					src='./SVG/earth.svg'
-					className='w-[6rem] absolute z-50 bottom-[300px] left-[40px] cursor-pointer'
+					className='w-[6rem] absolute z-50 bottom-[150px] left-[20px] cursor-pointer'
 					alt='venus'
 					onClick={() => navigate('/earth')}
 				/>
