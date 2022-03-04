@@ -50,17 +50,13 @@ const One = () => {
 
 	return (
 		<>
-			<div className='section  flex items-center justify-center flex-col  w-[100vw] h-[100vh]  relative'>
-				<p className='text text-5xl font-bold'>Hola!</p>
-				<p className='text text-7xl font-bold'>Soy Iván</p>
+			<div className='section  flex items-center justify-center flex-col  w-[100vw] h-[100vh]  relative px-10  font-bold text-2xl'>
+				<p className='text text-3xl '>Hola!</p>
+				<p className='text text-5xl '>Soy Iván</p>
 				<div ref={astroRocketAnim} className='baby h-[20rem] w-[20rem]'>
 					<Lottie loop={true} animationData={astronautRocket} />
 				</div>
-				<div className='px-10'>
-					<p className='text text-3xl text-slate-300 font-bold'>
-						Tengo una gran noticia que compartir!!!
-					</p>
-				</div>
+				<p className='text'>Tengo una gran noticia que compartir!!!</p>
 				<img
 					src='./SVG/mercury.svg'
 					className='w-[3rem] absolute z-50 top-[50px] left-10 cursor-pointer'
