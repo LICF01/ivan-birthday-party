@@ -104,13 +104,13 @@ const Three = () => {
 			>
 				<img
 					src='./SVG/planetSurface.svg'
-					className='w-[100%]'
+					className='w-[50rem] mx-auto'
 					alt=''
 				/>
 			</div>
 			<div
 				ref={astronaut}
-				className='absolute w-[40vw] bottom-[80px] z-0'
+				className='absolute w-[15rem] bottom-[80px] z-0'
 			>
 				<img
 					src='./SVG/astronautWithFlag.svg'

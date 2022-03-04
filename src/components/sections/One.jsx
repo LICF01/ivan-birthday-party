@@ -51,9 +51,10 @@ const One = () => {
 	return (
 		<>
 			<div className='section  flex items-center justify-center flex-col  w-[100vw] h-[100vh]  relative px-10  font-bold text-2xl'>
+
 				<p className='text text-3xl '>Hola!</p>
 				<p className='text text-5xl '>Soy Iván</p>
-				<div ref={astroRocketAnim} className='baby h-[20rem] w-[20rem]'>
+				<div ref={astroRocketAnim} className='h-[20rem] w-[20rem]'>
 					<Lottie loop={true} animationData={astronautRocket} />
 				</div>
 				<p className='text'>Tengo una gran noticia que compartir!!!</p>
