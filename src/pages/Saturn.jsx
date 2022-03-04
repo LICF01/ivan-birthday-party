@@ -8,7 +8,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Venus = () => {
+const Saturn = () => {
 	const ref = useRef(null);
 
 	useEffect(() => {
@@ -31,30 +31,28 @@ const Venus = () => {
 
 			<div>
 				<p className='text text-4xl font-bold'>Hola!</p>
-				<p className='text text-5xl font-bold'>Soy Venus</p>
+				<p className='text text-5xl font-bold'>Soy Saturno</p>
 			</div>
 
 			<img
 				ref={ref}
-				src='./SVG/venus.svg'
-				className='w-[3rem] absolute z-50 top-[50px] left-10 cursor-pointe my-10  mx-auto'
-				alt='venus'
+				src='./SVG/saturn.svg'
+				className='w-[5rem] absolute z-50 top-[50px] left-10 cursor-pointe my-10  mx-auto'
+				alt='saturn'
 			/>
 
 			<div className='mb-10'>
 				<Player
 					src={
-						'https://upload.wikimedia.org/wikipedia/commons/4/4c/Holst-_venus.ogg'
+						'https://content2.audionetwork.com/Preview/tracks/mp3/v5res/ANW3290/05.mp3'
 					}
 				/>
 			</div>
 
 			<div className='info  text-center text-2xl'>
 				<p className='text  my-5'>
-					Soy el segundo planeta del sistema solar, dicen que tengo un
-					gran parecido a la tierra en tamaño y otras propiedades por
-					lo que me suelen llamar
-					<i>“Hermano de la Tierra”</i>
+					Soy famoso por el imponente brillo procedente de mis anillos
+					y fui descubierto por Galileo en el año 1610
 				</p>
 				<p className='text  my-5'>
 					En la
@@ -73,17 +71,16 @@ const Venus = () => {
 						{' '}
 						Gustav Holst{' '}
 					</a>
-					, soy <br /> <i>"El portador de la paz"</i>
+					, soy <br /> <i>"El portador de la vejez"</i>
 				</p>
 				<p className='text  my-5'>
-					La música es lenta y bellamente inquietante, con melodías
-					relajantes tocadas con arpas y flautas, cuerdas brillantes y
-					pasajes etéreos de violín solo para recordar a la diosa
-					romana.
+					El movimiento favorito de Holst, lento e inquietante que se
+					eleva a un clímax aterrador antes de desvanecerse como si
+					fuera en los confines del espacio exterior
 				</p>
 			</div>
 		</div>
 	);
 };
 
-export default Venus;
+export default Saturn;

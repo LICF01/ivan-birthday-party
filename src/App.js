@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import Mercury from './pages/Mercury';
 import Venus from './pages/Venus';
 import Earth from './pages/Earth';
+import Mars from './pages/Mars';
+import Jupiter from './pages/Jupiter';
+import Saturn from './pages/Saturn';
 
 // tsParticles
 import Stars from './components/Stars';
@@ -16,7 +19,10 @@ function App() {
 					 <Route path='/' element={<Home />} />
 					 <Route path='/mercury' element={<Mercury />} />
 					 <Route path='/venus' element={<Venus />} />
-					 <Route path='/venus' element={<Earth />} />
+					 <Route path='/earth' element={<Earth />} />
+					 <Route path='/mars' element={<Mars />} />
+					 <Route path='/jupiter' element={<Jupiter />} />
+					 <Route path='/saturn' element={<Saturn />} />
 				</Routes>
 				<div className='z-0'>
 					<Stars />

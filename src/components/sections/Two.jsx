@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Lottie from 'lottie-react';
 
 // Lottie animation
@@ -10,6 +11,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Two = () => {
+	const navigate = useNavigate();
 	// ref needed by Gsap
 	const earthAnim = useRef(null);
 
@@ -33,10 +35,10 @@ const Two = () => {
 	});
 
 	return (
-		<div className='section bg-space-dark flex items-center justify-center flex-col w-[100vw] h-[100vh] font-bold text-2xl px-10'>
-				<p className='text '>
-					Estoy por completar mi primera vuelta al sol
-				</p>
+		<div className='section bg-space-dark flex items-center justify-center flex-col w-[100vw] h-[100vh] font-bold text-2xl px-10 relative'>
+			<p className='text '>
+				Estoy por completar mi primera vuelta al sol
+			</p>
 			<div ref={earthAnim}>
 				<Lottie animationData={EarthOrbitingSun} loop={true} />
 			</div>
@@ -45,6 +47,25 @@ const Two = () => {
 					Me acompañarías a festejar este momento especial?
 				</p>
 			</div>
+
+			<img
+				src='./SVG/mars.svg'
+				className='w-[5.5rem] absolute z-50 top-[-100px] right-[20%] cursor-pointer'
+				alt='mercury'
+				onClick={() => navigate('/mars')}
+			/>
+			<img
+				src='./SVG/jupiter.svg'
+				className='w-[10rem] absolute z-[0] top-[-10px] left-[20px] cursor-pointer'
+				alt='jupiter'
+				onClick={() => navigate('/jupiter')}
+			/>
+			<img
+				src='./SVG/saturn.svg'
+				className='w-[12.5rem] absolute z-50 bottom-[10px] left-[140px] cursor-pointer'
+				alt='venus'
+				onClick={() => navigate('/saturn')}
+			/>
 		</div>
 	);
 };

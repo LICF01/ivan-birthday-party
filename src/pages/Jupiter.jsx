@@ -8,7 +8,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Venus = () => {
+const Jupiter = () => {
 	const ref = useRef(null);
 
 	useEffect(() => {
@@ -31,30 +31,30 @@ const Venus = () => {
 
 			<div>
 				<p className='text text-4xl font-bold'>Hola!</p>
-				<p className='text text-5xl font-bold'>Soy Venus</p>
+				<p className='text text-5xl font-bold'>Soy Júpiter</p>
 			</div>
 
 			<img
 				ref={ref}
-				src='./SVG/venus.svg'
+				src='./SVG/jupiter.svg'
 				className='w-[3rem] absolute z-50 top-[50px] left-10 cursor-pointe my-10  mx-auto'
-				alt='venus'
+				alt='jupiter'
 			/>
 
 			<div className='mb-10'>
 				<Player
 					src={
-						'https://upload.wikimedia.org/wikipedia/commons/4/4c/Holst-_venus.ogg'
+						'https://upload.wikimedia.org/wikipedia/commons/e/e2/Holst_The_Planets_Jupiter.ogg'
 					}
 				/>
 			</div>
 
 			<div className='info  text-center text-2xl'>
 				<p className='text  my-5'>
-					Soy el segundo planeta del sistema solar, dicen que tengo un
-					gran parecido a la tierra en tamaño y otras propiedades por
-					lo que me suelen llamar
-					<i>“Hermano de la Tierra”</i>
+					Recibo mi nombre en honor al dios griego Zeus, al cual los
+					romanos llamaban Júpiter soy el más grande de los planetas y
+					más antiguo, algunos dicen que incluso más antiguo que el
+					Sol
 				</p>
 				<p className='text  my-5'>
 					En la
@@ -73,17 +73,29 @@ const Venus = () => {
 						{' '}
 						Gustav Holst{' '}
 					</a>
-					, soy <br /> <i>"El portador de la paz"</i>
+					, soy <br /> <i>"El portador de la alegría"</i>
 				</p>
 				<p className='text  my-5'>
-					La música es lenta y bellamente inquietante, con melodías
-					relajantes tocadas con arpas y flautas, cuerdas brillantes y
-					pasajes etéreos de violín solo para recordar a la diosa
-					romana.
+					Represento al alegre tío de cara redonda de todos los
+					planetas y rey de los dioses, impresionante y majestuoso.
+
+				</p>
+				<p className='text  my-5'>
+					Los metales y las cuerdas se encuentran con momentos de
+					conmovedora belleza en la gloriosa melodía que ahora se
+					conoce como
+					<a
+						href='https://www.wikiwand.com/es/I_Vow_to_Thee,_My_Country'
+						class='text-blue-400 visited:text-purple-400 ...'
+					>
+						{' '}
+						"Te prometo a ti, mi país"{' '}
+					</a>
+					.
 				</p>
 			</div>
 		</div>
 	);
 };
 
-export default Venus;
+export default Jupiter;

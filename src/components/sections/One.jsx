@@ -71,7 +71,7 @@ const One = () => {
 				/>
 				<img
 					src='./SVG/earth.svg'
-					className='w-[6rem] absolute z-50 bottom-[30px] right-[50%] cursor-pointer'
+					className='w-[6rem] absolute z-50 bottom-[300px] left-[40px] cursor-pointer'
 					alt='venus'
 					onClick={() => navigate('/earth')}
 				/>
