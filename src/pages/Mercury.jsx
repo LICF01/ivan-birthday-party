@@ -23,7 +23,7 @@ const Mercury = () => {
 		<div className='px-10 min-h-screen py-20 relative'>
 			<div>
 				<Link to='/'>
-					<p className='text text-md font-bold absolute top-0 mt-5'>
+					<p className='text text-md font-bold absolute top-0 mt-5  uppercase'>
 						Atras
 					</p>
 				</Link>
@@ -73,7 +73,7 @@ const Mercury = () => {
 					Gustav Holst
 						{' '}
 					</a>
-					, me llaman <br /> <i>"El mensajero alado"</i>
+					, me llaman <i>"El mensajero alado"</i>.
 				</p>
 				<p className='text  my-5'>
 					Soy el último y más corto de los siete movimientos y se

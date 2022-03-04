@@ -23,7 +23,7 @@ const Venus = () => {
 		<div className='px-10 min-h-screen py-20 relative'>
 			<div>
 				<Link to='/'>
-					<p className='text text-md font-bold absolute top-0 mt-5'>
+					<p className='text text-md font-bold absolute top-0 mt-5  uppercase'>
 						Atras
 					</p>
 				</Link>
@@ -53,7 +53,7 @@ const Venus = () => {
 				<p className='text  my-5'>
 					Tengo la mitad del tamaño de la tierra y un 40% menos de
 					gravedad, también soy conocido como
-					<i>“Planeta rojo”</i>
+					<i> “Planeta rojo”</i>.
 				</p>
 				<p className='text  my-5'>
 					En la
@@ -72,13 +72,13 @@ const Venus = () => {
 						{' '}
 						Gustav Holst{' '}
 					</a>
-					, soy <br /> <i>"El portador de la guerra"</i>
+					, soy <i>"El portador de la guerra"</i>.
 				</p>
 				<p className='text  my-5'>
 					Siniestro y furioso, el primer movimiento de Holst
 					representa al dios romano de la guerra, Marte. Los ritmos
 					rígidos y los golpes de tambor pulsantes le dan a la música
-					un toque militar
+					un toque militar.
 				</p>
 			</div>
 		</div>

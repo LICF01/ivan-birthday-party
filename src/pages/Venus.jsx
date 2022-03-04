@@ -23,7 +23,7 @@ const Venus = () => {
 		<div className='px-10 min-h-screen py-20 relative'>
 			<div>
 				<Link to='/'>
-					<p className='text text-md font-bold absolute top-0 mt-5'>
+					<p className='text text-md font-bold absolute top-0 mt-5  uppercase'>
 						Atras
 					</p>
 				</Link>
@@ -54,7 +54,7 @@ const Venus = () => {
 					Soy el segundo planeta del sistema solar, dicen que tengo un
 					gran parecido a la tierra en tamaño y otras propiedades por
 					lo que me suelen llamar
-					<i>“Hermano de la Tierra”</i>
+					<i>“Hermano de la Tierra”</i>.
 				</p>
 				<p className='text  my-5'>
 					En la
@@ -73,7 +73,7 @@ const Venus = () => {
 						{' '}
 						Gustav Holst{' '}
 					</a>
-					, soy <br /> <i>"El portador de la paz"</i>
+					, soy <i>"El portador de la paz"</i>.
 				</p>
 				<p className='text  my-5'>
 					La música es lenta y bellamente inquietante, con melodías

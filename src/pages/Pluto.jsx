@@ -21,7 +21,7 @@ const Pluto = () => {
 		<div className='px-10 min-h-screen py-20 relative'>
 			<div>
 				<Link to='/'>
-					<p className='text text-md font-bold absolute top-0 mt-5'>
+					<p className='text text-md font-bold absolute top-0 mt-5  uppercase'>
 						Atras
 					</p>
 				</Link>
@@ -42,7 +42,7 @@ const Pluto = () => {
 			<div className='info  text-center text-2xl'>
 				<p className='text  my-5'>
 					Soy uno de los planetas enanos del sistema solar, mi nombre
-					hace referencia al dios griego Hades
+					hace referencia al dios griego Hades.
 				</p>
 				<p className='text  my-5'>
 					Por mi pequeño tamaño y gran distancia respecto al sol,
@@ -55,7 +55,7 @@ const Pluto = () => {
 						<i>New Horizons</i>{' '}
 					</a>
 					permitió apreciar por primera vez de forma nítida mi aspecto
-					real
+					real.
 				</p>
 				<p className='text  my-5'>
 					No poseo un movimiento en la 
@@ -74,7 +74,7 @@ const Pluto = () => {
 						{' '}
 						Gustav Holst,{' '}
 					</a>
-					ya que aún no había sido descubierto cuando fué escrita
+					ya que aún no había sido descubierto cuando fué escrita.
 				</p>
 			</div>
 		</div>

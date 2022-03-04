@@ -23,7 +23,7 @@ const Uranus = () => {
 		<div className='px-10 min-h-screen py-20 relative'>
 			<div>
 				<Link to='/'>
-					<p className='text text-md font-bold absolute top-0 mt-5'>
+					<p className='text text-md font-bold absolute top-0 mt-5  uppercase'>
 						Atras
 					</p>
 				</Link>
@@ -53,7 +53,7 @@ const Uranus = () => {
 				<p className='text  my-5'>
 					Soy el primer planeta que fue descubierto usando un
 					telescopio, además tengo la temperatura más baja de todo el
-					sistema solar, mínima de -224 grados Celsius
+					sistema solar, mínima de -224 grados Celsius.
 				</p>
 				<p className='text  my-5'>
 					En la
@@ -72,7 +72,7 @@ const Uranus = () => {
 						{' '}
 						Gustav Holst,{' '}
 					</a>
-					 soy <i>"El mago"</i>
+					 soy <i>"El mago"</i>.
 				</p>
 				<p className='text  my-5'>
 					Comenzando con cuatro notas de metal, el movimiento cambia de
@@ -81,7 +81,7 @@ const Uranus = () => {
 				<p className='text  my-5'>
 					La orquesta al completo muestra el impresionante poder de
 					este gélido planeta, representado en la mitología griega
-					como el dios del cielo
+					como el dios del cielo.
 				</p>
 			</div>
 		</div>

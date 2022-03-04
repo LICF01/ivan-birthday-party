@@ -21,7 +21,7 @@ const Neptune = () => {
 		<div className='px-10 min-h-screen py-20 relative'>
 			<div>
 				<Link to='/'>
-					<p className='text text-md font-bold absolute top-0 mt-5'>
+					<p className='text text-md font-bold absolute top-0 mt-5  uppercase'>
 						Atras
 					</p>
 				</Link>
@@ -44,7 +44,7 @@ const Neptune = () => {
 					Mi nombre hace referencia al dios griego Poseidón, soy el
 					planeta <em>gemelo</em> de Urano, fuí descubierto
 					oficialmente en 1846, más tarde se descubrió que Galileo ya
-					me había observado pero me confundió con una estrella
+					me había observado pero me confundió con una estrella.
 				</p>
 				<p className='text  my-5'>
 					En la
@@ -63,20 +63,20 @@ const Neptune = () => {
 						{' '}
 						Gustav Holst,{' '}
 					</a>
-					soy <i>"El místico"</i>
+					soy <i>"El místico"</i>.
 				</p>
 				<p className='text  my-5'>
 					Cuando Holst compuso esta obra como una pieza para dúo de
 					piano, usó un órgano para representar este planeta, pensó
 					que el piano, no podría representar un planeta tan
-					misterioso como Neptuno
+					misterioso como Neptuno.
 				</p>
 
 				<p className='text  my-5'>
 					Hermosas melodías de arpa y cuerdas
 					se deslizan unas sobre otras, hasta que Holst saca a relucir
 					la gloria suprema: un coro místico, que le da a la música
-					una cualidad de otro mundo
+					una cualidad de otro mundo.
 				</p>
 			</div>
 		</div>

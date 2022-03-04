@@ -21,7 +21,7 @@ const Earth = () => {
 		<div className='px-10 min-h-screen py-20 relative'>
 			<div>
 				<Link to='/'>
-					<p className='text text-md font-bold absolute top-0 mt-5'>
+					<p className='text text-md font-bold absolute top-0 mt-5 uppercase'>
 						Atras
 					</p>
 				</Link>
@@ -39,19 +39,11 @@ const Earth = () => {
 				alt='Earth'
 			/>
 
-			{/* <div className='mb-10'> */}
-			{/* 	<Player */}
-			{/* 		src={ */}
-			{/* 			'' */}
-			{/* 		} */}
-			{/* 	/> */}
-			{/* </div> */}
-
 			<div className='info  text-center text-2xl'>
 				<p className='text  my-5'>
 					Soy el mayor de los denominados planetas rocosos, gracias a
 					que poseo gran cantidad de agua se pudo formar vida, mi
-					nombre proviene del latín “Terra”
+					nombre proviene del latín “Terra”.
 				</p>
 				<p className='text  my-5'>
 					No poseo un tema en la
@@ -71,7 +63,7 @@ const Earth = () => {
 						Gustav Holst{' '}
 					</a>
 					, esto se debe a que la suite representa a los planetas que
-					se podían ver desde la tierra en esa época
+					se podían ver desde la tierra en esa época.
 				</p>
 			</div>
 		</div>
