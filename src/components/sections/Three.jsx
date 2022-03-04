@@ -52,13 +52,19 @@ const Three = () => {
 	});
 
 	return (
-		<div className='section section-3 flex items-center justify-center flex-col w-[100vw] h-[100vh] relative overflow-hidden font-bold text-2xl relative'>
+		<div className='section section-3 flex items-center justify-center flex-col w-[100vw] h-[100vh] relative overflow-hidden font-bold text-2xl'>
 			<div className='flex flex-col justify-center items-center text-center px-10 absolute top-[120px]'>
 				<p className='text py-2'>
-					Te espero el sábado 12 de Marzo de 2022 en la sucursal 2 de
-					Navegando a las 17:00
+					Te espero el sábado 12 de Marzo de 2022 en la
+					<a
+						href='https://g.page/navegandoparque?share'
+						class='text-blue-400 visited:text-purple-400 ...'
+					>
+						{' '}
+						sucursal 2 de Navegando{' '}
+					</a>
+					a las 17:00
 				</p>
-				<p className='text py-2'>Tte. 1º Porfirio Saldivar Nº 277</p>
 				<p className='text  py-2'>Nos vemos!</p>
 			</div>
 
