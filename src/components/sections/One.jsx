@@ -19,7 +19,7 @@ const One = () => {
 	useEffect(() => {
 		const textRefs = gsap.utils.toArray('.section');
 		textRefs.forEach((el) => {
-			const tl = gsap.timeline().fromTo(
+			gsap.timeline().fromTo(
 				el.querySelectorAll('.text'),
 				{
 					opacity: 0,
@@ -40,7 +40,7 @@ const One = () => {
 
 	// This handles the lottie animation
 	useEffect(() => {
-		const tl = gsap.timeline().from(astroRocketAnim.current, {
+		gsap.timeline().from(astroRocketAnim.current, {
 			opacity: 0,
 			height: '60rem',
 			width: '60rem',

@@ -1,8 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import Player from '../components/Player';
-
 // Gsap
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
