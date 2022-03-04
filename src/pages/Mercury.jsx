@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 import Player from '../components/Player';
 
@@ -23,8 +23,9 @@ const Mercury = () => {
 		<div className='px-10 min-h-screen py-20 relative'>
 			<div>
 				<Link to='/'>
-
-				<p className='text text-md font-bold absolute top-0 mt-5'>Atras</p>
+					<p className='text text-md font-bold absolute top-0 mt-5'>
+						Atras
+					</p>
 				</Link>
 			</div>
 
@@ -50,8 +51,29 @@ const Mercury = () => {
 
 			<div className='info  text-center text-2xl'>
 				<p className='text  my-5'>
-					En la Suite de los planetas de Gustav Holst, me llaman{' '}
-					<br /> 'El mensajero alado'
+					Además de ser el más pequeño, soy el primer planeta del
+					sistema solar, por lo que soy el más cercano al sol.
+				</p>
+				<p className='text  my-5'>
+					En la
+					<a
+						href='https://www.wikiwand.com/es/Los_planetas_(suite)'
+						class='text-blue-400 visited:text-purple-400 ...'
+					>
+						{' '}
+						<i>
+						Suite de los planetas</i>{' '}
+					</a>
+					de 
+					<a
+						href='https://www.wikiwand.com/es/Gustav_Holst'
+						class='text-blue-400 visited:text-purple-400 ...'
+					>
+						{' '}
+					Gustav Holst
+						{' '}
+					</a>
+					, me llaman <br /> <i>"El mensajero alado"</i>
 				</p>
 				<p className='text  my-5'>
 					Soy el último y más corto de los siete movimientos y se
@@ -59,10 +81,6 @@ const Mercury = () => {
 					glockenspiel.
 				</p>
 
-				<p className='text  my-5'>
-					Además de ser el más pequeño, soy el primer planeta del
-					sistema solar, por lo que soy el más cercano al sol.
-				</p>
 			</div>
 		</div>
 	);

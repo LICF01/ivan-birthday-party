@@ -52,12 +52,28 @@ const Venus = () => {
 			<div className='info  text-center text-2xl'>
 				<p className='text  my-5'>
 					Soy el segundo planeta del sistema solar, dicen que tengo un
-					gran parecido a la tierra por lo que me denominan como
-					“hermano de la Tierra”
+					gran parecido a la tierra en tamaño y otras propiedades por
+					lo que me suelen llamar
+					<i>“Hermano de la Tierra”</i>
 				</p>
 				<p className='text  my-5'>
-					En la Suite de los planetas de Gustav Holst, me llaman{' '}
-					<br /> 'El portador de la paz'
+					En la
+					<a
+						href='https://www.wikiwand.com/es/Los_planetas_(suite)'
+						class='text-blue-400 visited:text-purple-400 ...'
+					>
+						{' '}
+						<i>Suite de los planetas</i>{' '}
+					</a>
+					de
+					<a
+						href='https://www.wikiwand.com/es/Gustav_Holst'
+						class='text-blue-400 visited:text-purple-400 ...'
+					>
+						{' '}
+						Gustav Holst{' '}
+					</a>
+					, soy <br /> 'El portador de la paz'
 				</p>
 				<p className='text  my-5'>
 					Me abro camino con un tema de trompa solista respondido
