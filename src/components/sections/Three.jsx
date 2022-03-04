@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // Gsap
 import { gsap } from 'gsap';
@@ -6,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Three = () => {
+	const navigate = useNavigate();
 	// refs needed by Gsap
 	const cloudLeft = useRef(null);
 	const cloudRight = useRef(null);
@@ -14,16 +16,15 @@ const Three = () => {
 
 	// Gsap animation
 	useEffect(() => {
-		gsap
-			.timeline({
-				scrollTrigger: {
-					trigger: '.section-3',
-					scrub: 5,
-					pin: true,
-					start: 'top top',
-					end: 'top top',
-				},
-			})
+		gsap.timeline({
+			scrollTrigger: {
+				trigger: '.section-3',
+				scrub: 5,
+				pin: true,
+				start: 'top top',
+				end: 'top top',
+			},
+		})
 			.from(cloudLeft.current, {
 				opacity: 0,
 				xPercent: -100,
@@ -51,24 +52,39 @@ const Three = () => {
 	});
 
 	return (
-		<div className='section section-3 flex items-center justify-center flex-col w-[100vw] h-[100vh] relative overflow-hidden font-bold text-2xl'>
+		<div className='section section-3 flex items-center justify-center flex-col w-[100vw] h-[100vh] relative overflow-hidden font-bold text-2xl relative'>
 			<div className='flex flex-col justify-center items-center text-center px-10 absolute top-[120px]'>
 				<p className='text py-2'>
 					Te espero el sábado 12 de Marzo de 2022 en la sucursal 2 de
 					Navegando a las 17:00
 				</p>
-				<p className='text py-2'>
-					Tte. 1º Porfirio Saldivar Nº 277
-				</p>
-				<p className='text  py-2'>
-					Nos vemos!
-				</p>
+				<p className='text py-2'>Tte. 1º Porfirio Saldivar Nº 277</p>
+				<p className='text  py-2'>Nos vemos!</p>
 			</div>
+
+			<img
+				src='./SVG/uranus.svg'
+				className='w-[8rem] absolute z-50 top-[0] right-10 cursor-pointer'
+				alt='uranus'
+				onClick={() => navigate('/uranus')}
+			/>
+			<img
+				src='./SVG/neptune.svg'
+				className='w-[7rem] absolute z-[0] top-[370px] left-[20px] cursor-pointer'
+				alt='neptune'
+				onClick={() => navigate('/neptune')}
+			/>
+			<img
+				src='./SVG/pluto.svg'
+				className='w-[2.5rem] absolute z-50 bottom-[300px] right-[70px] cursor-pointer'
+				alt='pluto'
+				onClick={() => navigate('/pluto')}
+			/>
 			<div
 				ref={cloudLeft}
 				className='absolute w-[50vw] h-[50vw] bottom-[-10vw] left-[-10vw] z-30'
 			>
-				<img src='./SVG/cloudLeft.svg' className='w-[100%]' alt=''/>
+				<img src='./SVG/cloudLeft.svg' className='w-[100%]' alt='' />
 			</div>
 			<div
 				ref={cloudRight}
@@ -80,13 +96,21 @@ const Three = () => {
 				ref={planetSurface}
 				className='absolute w-[100vw] bottom-[0] z-0'
 			>
-				<img src='./SVG/planetSurface.svg' className='w-[100%]' alt='' />
+				<img
+					src='./SVG/planetSurface.svg'
+					className='w-[100%]'
+					alt=''
+				/>
 			</div>
 			<div
 				ref={astronaut}
 				className='absolute w-[40vw] bottom-[80px] z-0'
 			>
-				<img src='./SVG/astronautWithFlag.svg' className='w-[100%]' alt='' />
+				<img
+					src='./SVG/astronautWithFlag.svg'
+					className='w-[100%]'
+					alt=''
+				/>
 			</div>
 		</div>
 	);
