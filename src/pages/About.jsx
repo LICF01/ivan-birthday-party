@@ -22,11 +22,6 @@ const About = () => {
 
 	return (
 		<>
-			<Link to='/'>
-				<p className='text text-md font-bold absolute top-0 mt-5 uppercase ml-10'>
-					Atras
-				</p>
-			</Link>
 			<div className='px-10 flex justify-center items-center flex-col min-h-screen py-20 relative'>
 				<p className='text text-5xl font-bold'>Para Iván y Asu</p>
 
