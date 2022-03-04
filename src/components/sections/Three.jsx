@@ -64,7 +64,7 @@ const Three = () => {
 						class='text-blue-400 visited:text-purple-400 ...'
 					>
 						{' '}
-						"Navegando" sucursal 2{' '}
+						<i>Navegando</i> sucursal 2{' '}
 					</a>
 				</p>
 				<p className='text  py-2'>Cap. Oscar Ortellado Nº 277</p>
@@ -85,7 +85,7 @@ const Three = () => {
 			/>
 			<img
 				src='./SVG/pluto.svg'
-				className='w-[2.5rem] absolute z-50 bottom-[300px] right-[70px] cursor-pointer'
+				className='w-[2.5rem] absolute z-50 bottom-[200px] right-[40px] cursor-pointer'
 				alt='pluto'
 				onClick={() => navigate('/pluto')}
 			/>

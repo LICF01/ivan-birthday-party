@@ -39,7 +39,7 @@ const About = () => {
 				<p className='text  my-5'>
 					Hecho por
 					<a
-						href='https://www.wikiwand.com/es/Los_planetas_(suite)'
+						href='https://github.com/LICF01'
 						class='text-blue-400 visited:text-purple-400 ...'
 					>
 						{' '}
