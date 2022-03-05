@@ -1,15 +1,22 @@
+import { motion } from 'framer-motion';
+
 import One from '../components/sections/One';
 import Two from '../components/sections/Two';
 import Three from '../components/sections/Three';
 
-const Home = () => {
+const Home = ({ variants }) => {
 	return (
-		<div>
+		<motion.div
+			initial='initial'
+			animate='in'
+			exit='out'
+			variants={variants}
+		>
 			<One />
 			<Two />
 			<Three />
-		</div>
-	)
-}
+		</motion.div>
+	);
+};
 
-export default Home
+export default Home;

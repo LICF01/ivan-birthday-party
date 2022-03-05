@@ -55,16 +55,19 @@ const Three = () => {
 		<div className='section section-3 flex items-center justify-center flex-col w-[100vw] h-[100vh] relative overflow-hidden font-bold text-2xl'>
 			<div className='flex flex-col justify-center items-center text-center px-10 absolute top-[120px] z-[999]'>
 				<p className='text py-2'>
-					Te espero el sábado 12 de Marzo de 2022 a las 17:00
+					Te espero el sábado 12 de Marzo de 2022,
+				</p>
+				<p className='text py-2'>
+					a las 17:00 hs.
 				</p>
 				<p className='text py-2'>
 					En el local de
 					<a
 						href='https://g.page/navegandoparque?share'
-						class='text-blue-400 visited:text-purple-400 ...'
+						className='text-blue-400 visited:text-purple-400 ...'
 					>
 						{' '}
-						<i>Navegando</i> sucursal 2{' '}
+						<i>Navegando</i> - Sucursal 2{' '}
 					</a>
 				</p>
 				<p className='text  py-2'>Cap. Oscar Ortellado Nº 277</p>
@@ -73,19 +76,19 @@ const Three = () => {
 
 			<img
 				src='./SVG/uranus.svg'
-				className='w-[8rem] absolute z-50 top-[0] right-10 cursor-pointer'
+				className='w-[8rem] absolute z-50 top-[0] right-[10vw] cursor-pointer'
 				alt='uranus'
 				onClick={() => navigate('/uranus')}
 			/>
 			<img
 				src='./SVG/neptune.svg'
-				className='w-[7rem] absolute z-[0] top-[370px] left-[20px] cursor-pointer'
+				className='w-[7rem] absolute z-[0] top-[370px] left-[10vw] cursor-pointer'
 				alt='neptune'
 				onClick={() => navigate('/neptune')}
 			/>
 			<img
 				src='./SVG/pluto.svg'
-				className='w-[2.5rem] absolute z-50 bottom-[200px] right-[40px] cursor-pointer'
+				className='w-[2.5rem] absolute z-50 bottom-[200px] right-[15vw] cursor-pointer'
 				alt='pluto'
 				onClick={() => navigate('/pluto')}
 			/>

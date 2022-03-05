@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import Lottie from 'lottie-react';
 import WorkingAstronaut from '../components/lotties/workingAstronaut.json';
@@ -9,7 +10,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const About = () => {
+const About = ({ variants }) => {
 	const ref = useRef(null);
 
 	useEffect(() => {
@@ -21,7 +22,12 @@ const About = () => {
 	}, []);
 
 	return (
-		<>
+		<motion.div
+			initial='initial'
+			animate='in'
+			exit='out'
+			variants={variants}
+		>
 			<div className='px-10 flex justify-center items-center flex-col min-h-screen py-20 relative'>
 				<p className='text text-5xl font-bold'>Para Iván y Asu</p>
 
@@ -34,7 +40,7 @@ const About = () => {
 						Hecho por
 						<a
 							href='https://github.com/LICF01'
-							class='text-blue-400 visited:text-purple-400 ...'
+							className='text-blue-400 visited:text-purple-400 ...'
 						>
 							{' '}
 							Lucas Cubilla{' '}
@@ -43,7 +49,7 @@ const About = () => {
 					</p>
 				</div>
 			</div>
-		</>
+		</motion.div>
 	);
 };
 

@@ -47,19 +47,19 @@ const Two = () => {
 			</p>
 			<img
 				src='./SVG/mars.svg'
-				className='w-[5.5rem] absolute z-50 top-[-100px] right-[20%] cursor-pointer'
+				className='w-[5.5rem] absolute z-50 top-[-100px] right-[20vw] cursor-pointer'
 				alt='mercury'
 				onClick={() => navigate('/mars')}
 			/>
 			<img
 				src='./SVG/jupiter.svg'
-				className='w-[10rem] absolute z-[0] top-[-10px] left-[20px] cursor-pointer'
+				className='w-[10rem] absolute z-[0] top-[-10px] left-[10vw] cursor-pointer'
 				alt='jupiter'
 				onClick={() => navigate('/jupiter')}
 			/>
 			<img
 				src='./SVG/saturn.svg'
-				className='w-[12.5rem] absolute z-50 bottom-[10px] left-[15px] cursor-pointer'
+				className='w-[12.5rem] absolute z-50 bottom-[5px] left-[10vw] cursor-pointer'
 				alt='venus'
 				onClick={() => navigate('/saturn')}
 			/>
